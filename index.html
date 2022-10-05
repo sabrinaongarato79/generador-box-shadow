@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Generador Box Shadow</title>
+</head>
+<body>
+
+    <section>
+        <h1>Box Shadow Generador</h1>
+        <div class="contenedor">
+            <!-- CONTENEDOR DE LOS INPUTS PARA LOS VALORES DEL BOXSHADOW-->
+            <div class="inputs-shadow">
+                <h2>Estilos de la sombra</h2>
+
+                <div>
+                    <label for="">Desplazamiento horizontal: <input type="text" id="valorDesplazamientoX" value="10" >px</label>
+                    <input type="range" id="desplazamientoX" min="-100" max="100" value="10">
+                </div>
+
+                <div>
+                    <label for="">Desplazamiento vertical: <input type="text" id="valorDesplazamientoY" value="10">px</label>
+                    <input type="range" id="desplazamientoY" min="-100" max="100" value="10">
+                </div>
+
+                <div>
+                    <label for="">Blur de sombra: <input type="text" id="valorBlur" value="10">px</label>
+                    <input type="range" id="blur" min="0" max="100" value="10">
+                </div>
+
+                <div>
+                    <label for="">Spread de sombra: <input type="text" id="valorSpread" value="10">px</label>
+                    <input type="range" id="spread" min="-100" max="100" value="10">
+                </div>
+
+                <div>
+                    <label for="">Color de sombra: <input type="text" id="valorColorSombra" value="#000000">HEX</label>
+                    <input type="color" id="colorSombra" value="#000000">
+                </div>
+
+            </div>
+
+            <!-- CONTENEDOR DE LA CAJA -->
+            <div class="box-container">
+                <div class="box" id="caja"></div>
+            </div>
+
+            <!-- CONTENEDOR DE LOS INPUTS PARA LOS TAMAÑOS DE LA CAJA-->
+            <div class="inputs-box">
+                <h2>Estilos de la caja</h2>
+
+                <div>
+                    <label for="anchoCaja">Ancho: <input type="text" name="" id="valorAncho" value="200">px</label>
+                    <input type="range" name="" id="anchoCaja" max="500" value="200">
+                </div>
+                
+                <div>
+                    <label for="altoCaja">Alto: <input type="text" name="" id="valorAlto" value="200">px</label>
+                    <input type="range" name="" id="altoCaja" max="500" value="200">
+                </div>
+                
+                <div>
+                    <label for="borderCaja">Border radius: <input type="text" name="" id="valorRadius" value="2">rem</label>
+                    <input type="range" name="" id="borderCaja" max="10" value="2">
+                </div>
+
+                <div>
+                    <label for="">Fondo de la caja: <input type="text" id="valorColorCaja" value="#ffffff">HEX</label>
+                    <input type="color" id="colorCaja" value="#ffffff">
+                </div>
+
+                <div>
+                    <h2>Estilos CSS:</h2>
+
+                    <p>box-shadow: <span id="estilosSombra">10px 10px 10px 10px #000000;</span></p>
+                    <p>width: <span id="estilosWidth">200px;</span></p>
+                    <p>height: <span id="estilosHeight">200px;</span></p>
+                    <p>border-radius: <span id="estilosBorder">2rem;</span></p>
+                    <p>background-color: <span id="estilosBc">#ffffff;</span></p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+    <script src="app.js"></script>
+</body>
+</html>
